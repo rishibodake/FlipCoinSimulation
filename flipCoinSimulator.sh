@@ -108,14 +108,5 @@ done
    HHTper=`expr "scale=2;(${tripletCombinations[HHT]}*100)/$flips" | bc -l`
    THHper=`expr "scale=2;(${tripletCombinations[THH]}*100)/$flips" | bc -l`
 }
-genrateSingletCombinations
-echo ${singletCombinations[@]}
-echo ${!singletCombinations[@]}
-loopRunner=0
-genrateDoubletCombinations
-echo ${doubletCombinations[@]}
-echo ${!doubletCombinations[@]}
-loopRunner=0
 genrateTripletCombination
-echo ${tripletCombinations[@]}
-echo ${!tripletCombinations[@]}
+
